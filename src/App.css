@@ -1,0 +1,36 @@
+.iti__country-list {
+  background-color: white;
+  border-color: white;
+}
+
+.iti__dial-code {
+  color: #999;
+}
+.iti__country.iti__highlight {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.iti--allow-dropdown
+  input[readonly]
+  + .iti__flag-container:hover
+  .iti__selected-flag {
+  background-color: transparent;
+}
+
+.iti--separate-dial-code .iti__selected-flag {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.iti__flag {
+  background-color: white;
+}
+.iti__arrow {
+  border-color: #555;
+}
+.iti__arrow--up {
+  border-color: #555;
+}
+.iti__divider {
+  border-bottom: 1px solid #ccc;
+}

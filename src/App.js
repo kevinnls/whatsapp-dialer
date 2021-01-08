@@ -28,8 +28,9 @@ class App extends React.Component {
     this.iti = intlTelInput(phoneField, { utilsScript: utils });
   }
   handleSubmit(event) {
-    console.log(this.iti.getNumber());
     event.preventDefault();
+    let number = this.iti.getNumber().slice(1);
+    window.location = `//wa.me/${number}`;
   }
 }
 

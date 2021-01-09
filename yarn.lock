@@ -7197,7 +7197,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"intl-tel-input@npm:^17.0.5":
+"intl-tel-input@npm:^17.0.8":
   version: 17.0.8
   resolution: "intl-tel-input@npm:17.0.8"
   checksum: bc719e5ac439e404da56ad37fefa33768daa5888b085b763d250980d5a27b86e2ac277704b925fcf7babaef918b9c060bd6a6ef83d18a9bd53e4316ba0bc2938
@@ -11266,7 +11266,7 @@ fsevents@~2.3.1:
     "@testing-library/jest-dom": ^4.2.4
     "@testing-library/react": ^9.3.2
     "@testing-library/user-event": ^7.1.2
-    intl-tel-input: ^17.0.5
+    intl-tel-input: ^17.0.8
     react: ^16.13.1
     react-dom: ^16.13.1
     react-scripts: 3.4.3

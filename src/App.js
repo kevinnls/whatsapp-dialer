@@ -30,7 +30,7 @@ class App extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     let number = this.iti.getNumber().slice(1);
-    window.location = `//wa.me/${number}`;
+    window.location = `https://api.whatsapp.com/send/?phone=${number}`;
   }
 }
 

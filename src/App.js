@@ -6,6 +6,7 @@ const utils = require("intl-tel-input/build/js/utils");
 
 class App extends React.Component {
   handleSubmit = this.handleSubmit.bind(this);
+  handleChange = this.handleChange.bind(this);
 
   render() {
     return (
@@ -16,8 +17,8 @@ class App extends React.Component {
         <p className="center">This page has no affiliation with WhatsApp</p>
         <div className="center">
           <form onSubmit={this.handleSubmit}>
-            <input id="phone" type="text" />
-            <input type="submit" value="idk" />
+            <input id="phone" type="text" onChange={this.handleChange} />
+            <input type="submit" id="submit-button" disabled value="idk" />
           </form>
         </div>
       </React.Fragment>
@@ -27,10 +28,15 @@ class App extends React.Component {
     const phoneField = document.getElementById("phone");
     this.iti = intlTelInput(phoneField, { utilsScript: utils });
   }
+  handleChange(event){
+    this.number = this.iti.getNumber();
+    if(this.iti.isValidNumber()){
+	document.getElementById("submit-button").disabled = false;
+    }
+  }
   handleSubmit(event) {
     event.preventDefault();
-    let number = this.iti.getNumber().slice(1);
-    window.location = `https://api.whatsapp.com/send/?phone=${number}`;
+    window.location = `https://api.whatsapp.com/send/?phone=${this.number}`;
   }
 }
 

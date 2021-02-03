@@ -1,3 +1,23 @@
+:root {
+  --grey-000: #d1d1d1;
+  --grey-001: #a5a5a5;
+  --grey-002: #585757;
+  --grey-003: #3b3b3b;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: var(--grey-002);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bgcolor);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--grey-001);
+}
+
 /***+++ ele +++***/
 body {
   margin: 0;
@@ -14,20 +34,30 @@ header {
   font-size: larger;
 }
 input#phone {
-  background-color: var(--grey-002);
+  background-color: var(--grey-001);
   height: 3em;
   border-radius: 5px;
-  border: 1px var(--grey-001);
+  border: 1px var(--grey-002);
 }
-input#phone::placeholder{
-  color: var(--grey-001)
+input#phone::placeholder {
+  color: var(--grey-002);
 }
-input[type="submit"]{
-  margin:20px auto;
+input[type="submit"] {
+  margin: 20px auto;
   width: 45%;
   height: 2em;
   border-radius: 5px;
-  border: none;
+  border: 1px var(--grey-002) solid;
+  background-color: var(--grey-001);
+}
+input[type="submit"]:enabled:hover {
+  filter: brightness(120%);
+}
+input[type="submit"]:disabled {
+  background-color: var(--grey-000);
+  filter: opacity(90%);
+  border-color: var(--grey-001);
+  color: var(--grey-001);
 }
 form {
   display: flex;
@@ -35,6 +65,7 @@ form {
   width: min-content;
   margin: auto;
 }
+
 /***--- ele ---***/
 
 /***+++ classes ++++***/
@@ -45,6 +76,14 @@ div.center {
   text-align: center;
 }
 .iti__country-list {
-  background-color: var(--grey-002) !important;
+  background-color: var(--grey-001) !important;
+  border-radius: 0px 0px 5px 5px;
+  border-color: var(--grey-002);
+}
+.iti__country-name {
+  color: var(--grey-003);
+}
+.iti__dial-code {
+  color: var(--grey-002);
 }
 /***--- classes ---***/

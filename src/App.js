@@ -18,7 +18,7 @@ class App extends React.Component {
         <div className="center">
           <form onSubmit={this.handleSubmit}>
             <input id="phone" type="text" onChange={this.handleChange} />
-            <input type="submit" id="submit-button" disabled value="idk" />
+            <input type="submit" id="submit-button" disabled value="Enter Number" />
           </form>
         </div>
       </React.Fragment>
@@ -31,7 +31,8 @@ class App extends React.Component {
   handleChange(event){
     this.number = this.iti.getNumber();
     if(this.iti.isValidNumber()){
-	document.getElementById("submit-button").disabled = false;
+  document.getElementById("submit-button").disabled = false;
+  document.getElementById("submit-button").value = "Start Chat";
     }
   }
   handleSubmit(event) {

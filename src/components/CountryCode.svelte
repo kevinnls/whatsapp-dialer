@@ -1,5 +1,8 @@
 <script>
-	export let countryCode = null;
+	export let countryCode = '';
+	export let valid = false;
+	$: valid = /[0-9]{1,4}/.test(countryCode);
+	console.log("valid is", valid);
 </script>
 
 <label for="country-code">

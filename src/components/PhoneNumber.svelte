@@ -1,5 +1,7 @@
 <script>
-	export let phoneNumber = null;
+	export let phoneNumber = '';
+	export let valid = false;
+	$: valid = /[0-9]{3,15}/.test(phoneNumber);
 </script>
 
 <label for="phone-number">

@@ -1,9 +1,13 @@
+<script>
+	import Dialer from '../components/Dialer.svelte';
+</script>
+
 <header>
 	<h1>WhatsApp Dialer</h1>
 </header>
 
 <main>
-
+	<Dialer />
 </main>
 
 <footer>

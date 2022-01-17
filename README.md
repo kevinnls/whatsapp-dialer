@@ -24,15 +24,15 @@ this allows users to install the website as an app on their phones or computers 
 
 <details>
 <summary>Computer</summary>
-	
+
 	<details>
 	<summary>Chrome</summary>
 	</details>
-	
+
 	<details>
 	<summary>Firefox</summary>
 	</details>
-	
+
 	<details>
 	<summary>Safari</summary>
 	</details>
@@ -45,15 +45,15 @@ this allows users to install the website as an app on their phones or computers 
 
 <details>
 <summary>Phone</summary>
-	
+
 	<details>
 	<summary>Chrome</summary>
 	</details>
-	
+
 	<details>
 	<summary>Firefox</summary>
 	</details>
-	
+
 	<details>
 	<summary>Safari</summary>
 	</details>
@@ -67,7 +67,7 @@ this allows users to install the website as an app on their phones or computers 
 ## free to use?
 
 suprised you'd ask! but yes, this is
-[FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software "Free and Open Source Software")
+[FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software 'Free and Open Source Software')
 
 ## am i tracking phone numbers?
 

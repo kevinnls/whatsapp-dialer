@@ -1,5 +1,6 @@
 <script>
 	import Dialer from '../components/Dialer.svelte';
+	import History from '../components/History.svelte';
 </script>
 
 <header>
@@ -8,10 +9,13 @@
 
 <main>
 	<Dialer />
+	<History />
 </main>
 
 <footer>
 	<small>
-		&copy; 2022 Kevin Samuel <a href="mailto:developer+whatsappdialer@kevinnlsamuel.com"> &lt;developer@kevinnlsamuel.com&gt; </a>
+		&copy; 2022 Kevin Samuel <a href="mailto:developer+whatsappdialer@kevinnlsamuel.com">
+			&lt;developer@kevinnlsamuel.com&gt;
+		</a>
 	</small>
 </footer>

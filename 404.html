@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link rel="icon" href="/whatsapp-dialer/favicon.png" />
+		<link rel="stylesheet" href="/whatsapp-dialer/index.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+	<link rel="modulepreload" href="/whatsapp-dialer/_app/start-4c359dae.js">
+	<link rel="modulepreload" href="/whatsapp-dialer/_app/chunks/vendor-d95e6f8d.js">
+			<script type="module">
+				import { start } from "/whatsapp-dialer/_app/start-4c359dae.js";
+				start({
+					target: document.querySelector("#svelte"),
+					paths: {"base":"/whatsapp-dialer","assets":"/whatsapp-dialer"},
+					session: {},
+					route: true,
+					spa: true,
+					trailing_slash: "never",
+					hydrate: null
+				});
+			</script>
+	</head>
+	<body>
+		<div id="svelte"></div>
+	</body>
+</html>

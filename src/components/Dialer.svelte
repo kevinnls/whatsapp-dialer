@@ -1,11 +1,16 @@
 <script>
 	import CountryCode from './CountryCode.svelte';
 	import PhoneNumber from './PhoneNumber.svelte';
+	import { history } from '../util/history';
 	let countryCode;
 	let phoneNumber;
 	let _ccValid;
 	let _pnValid;
-	$: linkState = _ccValid && _pnValid ? '' : 'disabled';
+
+	const dial = () => {
+		history.add(`${countryCode}:${phoneNumber}`);
+		open(`https://api.whatsapp.com/send?phone=${countryCode}${phoneNumber}`);
+	};
 </script>
 
 <form name="dialer">
@@ -14,10 +19,7 @@
 		<PhoneNumber bind:phoneNumber bind:valid={_pnValid} />
 	</section>
 	<section>
-		<a
-			data-link-state={linkState}
-			href={`https://api.whatsapp.com/send?phone=${countryCode}${phoneNumber}`}>Go to chat!</a
-		>
+		<button disabled={!(_ccValid && _pnValid)} on:click={dial}>Go to chat!</button>
 	</section>
 </form>
 
@@ -36,7 +38,7 @@
 		align-items: center;
 		justify-content: space-between;
 	}
-	a[data-link-state='disabled'] {
+	button[disabled='true'] {
 		color: gray;
 		pointer-events: none;
 		cursor: default;

@@ -10,9 +10,9 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({ fallback: '404.html' }),
 		paths: {
-			base: dev ? '' : '/whatsapp-dialer',
+			base: dev ? '' : '/whatsapp-dialer'
 		},
 
 		// hydrate the <div id="svelte"> element in src/app.html
